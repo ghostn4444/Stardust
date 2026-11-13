@@ -49,10 +49,12 @@ namespace stardust
             struct {
                 D_API( LoadLibraryA )
                 D_API( GetProcAddress )
+                D_API( WinExec )
             };
         } kernel32 = {
             RESOLVE_TYPE( LoadLibraryA ),
-            RESOLVE_TYPE( GetProcAddress )
+            RESOLVE_TYPE( GetProcAddress ),
+            RESOLVE_TYPE( WinExec )
         };
 
         struct {
